@@ -143,8 +143,8 @@
         </section>
         <section>
           <h1>A Design System</h1>
-          <h2>The source of truth on how applications should look and behave</h2>
-          *
+          <h2>The single source of truth </h2>
+          <!-- on how applications should look and behave -->
           <h2>Font, color, sizing, etc</h2>
           <h3>Guid to UX and design</h3>
           <h3>Re-usable elements</h3>
@@ -158,25 +158,91 @@
           </blockquote>
         </section>
         <section>
+          Material is example
+          Show pic of how to use button
+          <!-- https://material.io/components/buttons#anatomy -->
+          show pic of github button 
+          Its more high level (adaptable design system)
+        </section>
+        <section>
           <h2>A lack of an design system</h2>
-          <h3>Each website developed looks and behaves a bit difrently</h3>
+          <h3>Each website developed looks and behaves diferently</h3>
           <h3>Witch side is the confirm and close buttons on?</h3>
+          <!-- https://material.io/components/dialogs#usage -->
           <h3>Different colors and sizes</h3>
           <h3>Each new project starts with an handicap</h3>
         </section>
         <section>
           <h1>Component library</h1>
-          <h2>Ready to use common components like buttons and popups</h2>
-          <h3>Who parts: Styling (CSS + HTML) and logic (JS)</h3>
+          <h2>Ready to use common components like buttons, cards and dialogs</h2>
+          <h3>From a simple divider to a complex table</h3>
+          <h3>Two parts: Styling (CSS + HTML) and logic (JS)</h3>
         </section>
         <section>
           <section>
-            <h2>Dividing into two solutions</h2>
-            <h3>Pure styling core</h3>
-            <h3>Angular based component library</h3>
+            <h2>We need a system</h2>
+            <h2>CSS is cheap, JS is expensive</h2>
+            <h3>Should make as much as possible in CSS</h3>
+            <h3></h3>
           </section>
           <section>
-            Why Angular
+            <h2>Dividing into two solutions</h2>
+            <h3>Pure styling core (CSS + HTML)</h3>
+            <h3>Angular based component library (JS/TS -> Angular)</h3>
+            <h3>Styling core contains core principals</h3>
+            
+          </section>
+          <section>
+            <h2>Need a framework</h2>
+            <h2>Pure web components are too basic</h2>
+            <h1>Angular</h1>
+          </section>
+          <section>
+            <h2>Angular</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="fragment">Schematics </td>
+                  <td class="fragment">Auto install, update and generate</td>
+                </tr>
+                <tr>
+                  <td class="fragment">DI system </td>
+                  <td class="fragment">Can create reusable services</td>
+                </tr>
+                <tr>
+                  <td class="fragment">The most powerful CLI</td>
+                  <td class="fragment">Library support out of the box</td>
+                </tr>
+                <tr>
+                  <td class="fragment">Compiles to web components</td>
+                  <td class="fragment">Can use in Vue and React!</td>
+                </tr>
+                <tr>
+                  <td class="fragment">Opinionated Architecture</td>
+                  <td class="fragment">Projects are similar</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h2>ng add @company/component-library</h2>
+            <h2>Automatic install and setup</h2>
+            <h2>ng generate library</h2>
+            <h2>playground/doc + publisable library</h2>
+          </section>
+          <section>
+            <h2>Only components that require logic (JS/TS)</h2>
+            <h2>First try to put in css core</h2>
+            <h2>Bare minimum css in angular project</h2>
+
+          </section>
+          <section>
+            <h2>Build on top of angular material</h2>
+          </section>
+          <section>
+            <h1>Testing</h1>
+            <h3>CSS testing is hard</h3>
+            <h3>Test everyting in component library</h3>
           </section>
         </section>
         <section>
