@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi) ? "css/print/pdf.css" : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+    <style>
+      .bcc {
+        color: #2b6abc !important;
+      }
+
+      .slides {
+        width: 82% !important;
+      }
+
+      .med-text {
+        font-size: 60px;
+      }
+
+      .large-text {
+        font-size: 100px;
+      }
+
+      .normalcase {
+        text-transform: none !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        text-transform: none !important;
+      }
+
+      .flexrox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .browser-img {
+        width: 100px;
+        height: 100px;
+        margin: 0px !important;
+        margin-right: 10px !important;
+        background: unset !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      .no-img-outline {
+        margin: 0px !important;
+        margin-right: 10px !important;
+        background: unset !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      .big-emoji {
+        font-size: 100px;
+      }
+
+      .halfgone {
+        opacity: 0.5;
+      }
+
+      .rxjsc {
+        color: #c1185a;
+      }
+
+      .tab-and-arrow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+      }
+
+      .hidden-filler {
+        opacity: 0;
+        user-select: none;
+      }
+
+      .tab-icon {
+        width: 200px;
+      }
+      .arrows-icon {
+        width: 100px;
+      }
+
+      .angular {
+        color: #dd0031 !important;
+      }
+
+      .webrtc-orange {
+        color: #ff6600 !important;
+      }
+
+      .big-text {
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>
+            Why <span class="big-text angular">Angular</span> is the best
+            <span class="big-text angular">framework</span> for a
+            <span class="big-text angular">design-system</span>
+          </h2>
+          <h3>Jan Greger Hemb</h3>
+          <h3>Computas</h3>
+        </section>
+        <section>
+          Intro
+        </section>
+        <section>
+          <h2>Developing websites is becoming harder</h2>
+          <h3>And we want a consistent design</h3>
+          <h3>And a consistent user experience</h3>
+          <h3>At high speed</h3>
+          <h2>Need a standard</h2>
+        </section>
+        <section>
+          <h1>A Design System</h1>
+          <h2>The source of truth on how applications should look and behave</h2>
+          *
+          <h2>Font, color, sizing, etc</h2>
+          <h3>Guid to UX and design</h3>
+          <h3>Re-usable elements</h3>
+          <h3>Toolkit for rapitly creating new websites</h3>
+          <h3>while maintaining a consistent user experience, and design.</h3>
+        </section>
+        <section>
+          <blockquote>
+            Design systems are the solution to the problem of how to enable rapid development and innovation while
+            maintaining a consistent user experience, and design.
+          </blockquote>
+        </section>
+        <section>
+          <h2>A lack of an design system</h2>
+          <h3>Each website developed looks and behaves a bit difrently</h3>
+          <h3>Witch side is the confirm and close buttons on?</h3>
+          <h3>Different colors and sizes</h3>
+          <h3>Each new project starts with an handicap</h3>
+        </section>
+        <section>
+          <h1>Component library</h1>
+          <h2>Ready to use common components like buttons and popups</h2>
+          <h3>Who parts: Styling (CSS + HTML) and logic (JS)</h3>
+        </section>
+        <section>
+          <section>
+            <h2>Dividing into two solutions</h2>
+            <h3>Pure styling core</h3>
+            <h3>Angular based component library</h3>
+          </section>
+          <section>
+            Why Angular
+          </section>
+        </section>
+        <section>
+          Tips n Trics
+        </section>
+        <section>
+          Potential problems
+        </section>
+        <section>
+          Conclution
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        history: true,
+        hash: true,
+        controls: false,
+        progress: false,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/highlight/highlight.js" },
+          { src: "plugin/notes/notes.js", async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
