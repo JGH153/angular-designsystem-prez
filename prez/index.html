@@ -272,7 +272,6 @@
             <h2>ng generate library</h2>
             <h2>playground/doc + publisable library</h2>
           </section>
-          <section></section>
           <section>
             <h2>What do i put in the component library?</h2>
             <h2>Only components that require logic (JS/TS)</h2>
@@ -295,7 +294,47 @@
           PUBLISH EVERY MERGE Semantic versioning 10.5.1 (Major.Minor.Patch) Github action that publish each merge to
           master after PR Shortest possible time from request to published
         </section>
-        <section></section>
+        <section>
+          <section>
+            Angular tips n trics
+          </section>
+          <section>
+            ChangeDetectionStrategy.OnPush
+            Takes control over change detection
+            Still runs on inputs and outputs update
+          </section>
+          <section>
+            use ngProjectAs
+            <pre class="fragment"><code class="HTML" data-trim contenteditable>
+              <ng-container ngProjectAs="pageTitle">
+                My Page Title
+              </ng-container>
+              
+              // in component
+              <ng-content select="pageTitle"></ng-content>
+            </code></pre>
+          </section>
+          <section>
+            Consider viewEncapsulation on
+            <pre class="fragment"><code class="CSS" data-trim contenteditable>
+              /* CSS file */
+              :host {
+                display: block;
+              }
+              :host(.big) .card {
+                max-width: 700px;
+              }
+              .card {
+                width: 200px;
+              }
+            </code></pre>
+
+            <pre class="fragment"><code class="HTML" data-trim contenteditable>
+              <app-card class="big"></app-card>
+            </code></pre>
+            Or shadowDom
+          </section>
+        </section>
         <section>
           <section>
             Tips n Trics
