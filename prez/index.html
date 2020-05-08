@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/theme/black.css" />
+    <link rel="stylesheet" href="product-colors.css" />
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/monokai.css" />
@@ -22,10 +23,6 @@
       document.getElementsByTagName("head")[0].appendChild(link);
     </script>
     <style>
-      .bcc {
-        color: #2b6abc !important;
-      }
-
       .slides {
         width: 82% !important;
       }
@@ -82,10 +79,6 @@
         opacity: 0.5;
       }
 
-      .rxjsc {
-        color: #c1185a;
-      }
-
       .tab-and-arrow {
         display: flex;
         justify-content: space-between;
@@ -106,14 +99,6 @@
         width: 100px;
       }
 
-      .angular {
-        color: #dd0031 !important;
-      }
-
-      .webrtc-orange {
-        color: #ff6600 !important;
-      }
-
       .big-text {
         font-size: 100px;
       }
@@ -132,47 +117,50 @@
           <h3>Computas</h3>
         </section>
         <section>
-          Demo first?
+          <h1>Thy Demo</h1>
         </section>
         <section>
           <section>
-            Story time
+            <h1>Story time</h1>
           </section>
           <section>
-            Medium sized company Recent push to digital solutions
+            <h2>Medium sized company</h2>
+            <h1 class="fragment">Elvia</h1>
+            <h3 class="fragment">Recent push to digital solutions</h3>
           </section>
           <section>
-            Wanted rapid developpment of new systems
+            <h3>Wanted rapid development of new systems</h3>
           </section>
           <section>
-            Each team had their own idea of what a website is
+            <h3>Each team had their own idea of what a website is</h3>
           </section>
           <section>
-            Copy and paste With bugs
+            <h2>Copy and paste</h2>
+            <h2 class="fragment">With bugs</h2>
           </section>
           <section>
-            Making a new site took too long
+            <h3>Making a new site took too long</h3>
+            <h2 class="fragment">Re-invented the wheel</h2>
           </section>
           <section>
-            Needed a solution
+            <h2>Needed a solution</h2>
           </section>
         </section>
         <section>
-          <h2>Developing websites is becoming harder</h2>
-          <h3>And we want a consistent design</h3>
-          <h3>And a consistent user experience</h3>
-          <h3>At high dev speed</h3>
-          <h2>Need a standard</h2>
+          <h2>Making websites is hard</h2>
+          <h3 class="fragment">And we want a consistent design</h3>
+          <h3 class="fragment">And a consistent user experience</h3>
+          <h3 class="fragment">At high dev speed</h3>
+          <h2 class="fragment">Need a standard</h2>
         </section>
         <section>
           <h1>A Design System</h1>
-          <h2>The single source of truth</h2>
+          <h2 class="fragment">The single source of truth</h2>
           <!-- on how applications should look and behave -->
-          <h2>Font, color, sizing, etc</h2>
-          <h3>Guid to UX and design</h3>
-          <h3>Re-usable elements</h3>
-          <h3>Toolkit for rapitly creating new websites</h3>
-          <h3>while maintaining a consistent user experience, and design.</h3>
+          <h3 class="fragment">Font, color, sizing, etc</h3>
+          <h3 class="fragment">Guid to UX and design</h3>
+          <h3 class="fragment">Re-usable elements</h3>
+          <!-- <h3 class="fragment">Toolkit (and framework) for rapitly creating new websites</h3> -->
         </section>
         <section>
           <blockquote>
@@ -181,75 +169,86 @@
           </blockquote>
         </section>
         <section>
-          Material is example Show pic of how to use button
-          <!-- https://material.io/components/buttons#anatomy -->
-          show pic of github button Its more high level (adaptable design system)
+          <section>
+            <h1>Material Design</h1>
+          </section>
+          <section data-background="media/materialdesign/frontpage.png" style="top: 0px !important;"></section>
+          <section data-background="media/materialdesign/button demo.png" style="top: 0px !important;"></section>
+          <section data-background="media/materialdesign/placement.png" style="top: 0px !important;"></section>
         </section>
         <section>
           <h2>A lack of an design system</h2>
-          <h3>Each website developed looks and behaves diferently</h3>
-          <h3>Witch side is the confirm and close buttons on?</h3>
+          <h3 class="fragment">Each website developed looks differently</h3>
+          <h3 class="fragment">Witch side is the button on?</h3>
           <!-- https://material.io/components/dialogs#usage -->
-          <h3>Different colors and sizes</h3>
-          <h3>Each new project starts with an handicap</h3>
+          <h3 class="fragment">Different colors and sizes</h3>
+          <h3 class="fragment">Each new project starts with an handicap</h3>
         </section>
 
         <section>
           <section>
-            Story continue
+            <h1>Story continue ▶</h1>
           </section>
           <section>
-            Had several websites already, in different frameworks Needed a design system that worked everywhere
+            <h3>Had several websites already</h3>
+            <h3 class="fragment">In different frameworks</h3>
+            <h3 class="fragment">Needed a design system that worked everywhere</h3>
           </section>
           <section>
-            CSS only is a start but need logic Popup, table, select
+            <h3>CSS only is a start</h3>
+            <h3 class="fragment">Need logic Popup, table, select</h3>
           </section>
           <section>
-            Needed to be easy to adopt and use
+            <h3>Needed to be easy to use</h3>
+            <h3 class="fragment">In all projects</h3>
+            <h3 class="fragment">And frameworks</h3>
           </section>
           <section>
-            Needed good documentation and marketing
+            <h3>Needed good documentation</h3>
+            <h2 class="fragment">And marketing</h2>
           </section>
           <section>
-            Landed on a two part system
+            <h2>Landed on a two part system</h2>
           </section>
+          <!-- TODO illustration -->
           <section>
             <h3>Pure styling core (CSS + HTML)</h3>
-            <h3>Component library (JS/TS)</h3>
+            <h3 class="fragment">Component library (JS/TS)</h3>
           </section>
         </section>
 
         <section>
           <h1>Component library</h1>
-          <h2>Ready to use common components like buttons, cards and dialogs</h2>
-          <h3>From a simple divider to a complex table</h3>
+          <h2 class="fragment">Ready to use components like buttons, cards and dialogs</h2>
+          <h3 class="fragment">From a simple divider to a complex table</h3>
         </section>
         <section>
           <section>
             <h2>CSS is cheap, JS is expensive</h2>
-            <h3>Should make as much as possible in CSS</h3>
-            <h3>The limiting of CSS is good</h3>
+            <h3 class="fragment">Should make as much as possible in CSS</h3>
+            <h3 class="fragment">The limiting of CSS is good</h3>
           </section>
           <section>
             <h2>Need a framework</h2>
-            <h2>Pure web components are too basic</h2>
-            <h1>Angular</h1>
+            <h2 class="fragment">Pure web components are too basic</h2>
+            <h1 class="fragment">Angular</h1>
           </section>
           <section>
             <h2>Angular</h2>
+            <!--  TODO also has biggest feature set -->
             <table>
               <tbody>
                 <tr>
                   <td class="fragment">Schematics</td>
-                  <td class="fragment">Auto install, update and generate</td>
+                  <td class="fragment">Auto install and update</td>
                 </tr>
                 <tr>
                   <td class="fragment">DI system</td>
-                  <td class="fragment">Can create reusable services</td>
+                  <td class="fragment">Reusable services</td>
                 </tr>
                 <tr>
                   <td class="fragment">The most powerful CLI</td>
-                  <td class="fragment">Library support out of the box</td>
+                  <td class="fragment">Library support</td>
                 </tr>
                 <tr>
                   <td class="fragment">Compiles to web components</td>
@@ -263,66 +262,84 @@
                   <td class="fragment">Reduce bundle size</td>
                   <td class="fragment">Angular 9 IVY</td>
                 </tr>
+                <tr>
+                  <td class="fragment">Angular CDK</td>
+                  <td class="fragment">Drag n drop, virtual scroll</td>
+                </tr>
+                <tr>
+                  <td class="fragment">Complete framework</td>
+                  <td class="fragment">Everything needed</td>
+                </tr>
               </tbody>
             </table>
           </section>
           <section>
             <h2>ng add @company/component-library</h2>
-            <h2>Automatic install and setup</h2>
-            <h2>ng generate library</h2>
-            <h2>playground/doc + publisable library</h2>
+            <h2 class="fragment">Automatic install and setup</h2>
+            <h2 class="fragment">playground/doc + publisable library</h2>
           </section>
           <section>
+            <!-- todo fix where did we put it -->
             <h2>What do i put in the component library?</h2>
-            <h2>Only components that require logic (JS/TS)</h2>
-            <h2>First try to put in css core</h2>
-            <h2>Bare minimum css in angular project</h2>
+            <h2 class="fragment">Only components that require logic (JS/TS)</h2>
+            <h2 class="fragment">First try to put in css core</h2>
+            <h2 class="fragment">Bare minimum css in angular project</h2>
           </section>
           <section>
             <h2>Build on top of angular material</h2>
-            <h2>Table, select, modal</h2>
-            <h2>Don't reinvent the wheel</h2>
+            <h2 class="fragment">Table, select, modal</h2>
+            <h2 class="fragment">Don't reinvent the wheel</h2>
           </section>
           <section>
+            <!--  fix all is comp lib -->
             <h1>Testing</h1>
-            <h3>CSS testing is hard</h3>
-            <h3>Test everyting in component library</h3>
-            <h3>Unit and E2E (Cypress)</h3>
+            <h3 class="fragment">CSS testing is hard</h3>
+            <h3 class="fragment">Test everyting in component library</h3>
+            <h3 class="fragment">Unit and E2E (Cypress)</h3>
           </section>
         </section>
         <section>
-          PUBLISH EVERY MERGE Semantic versioning 10.5.1 (Major.Minor.Patch) Github action that publish each merge to
-          master after PR Shortest possible time from request to published
+          <h2>Publish each merge to master</h2>
+          <h3 class="fragment">Semantic versioning 10.5.1</h3>
+          <h3 class="fragment">(Major.Minor.Patch)</h3>
+          <h3 class="fragment">Github action</h3>
+          <h3 class="fragment">Shortest possible time from request to publish</h3>
         </section>
         <section>
           <section>
-            Angular tips n trics
+            <h2>Angular tips n trics</h2>
           </section>
           <section>
-            ChangeDetectionStrategy.OnPush
-            Takes control over change detection
-            Still runs on inputs and outputs update
+            <h2>ChangeDetectionStrategy.OnPush</h2>
+            <h3 class="fragment">Takes control over change detection</h3>
+            <h3 class="fragment">Still runs on inputs and outputs update</h3>
           </section>
           <section>
-            use ngProjectAs
+            <h2>use ngProjectAs and select</h2>
             <pre class="fragment"><code class="HTML" data-trim contenteditable>
-              <ng-container ngProjectAs="pageTitle">
-                My Page Title
-              </ng-container>
+              <my-component>
+                <ng-container ngProjectAs="pageTitle">My Page Title</ng-container>
+                <ng-container ngProjectAs="pageContent">My Page Title</ng-container>
+              </my-component>
               
-              // in component
+              // in my-component
               <ng-content select="pageTitle"></ng-content>
+              <p>
+                <ng-content select="pageContent"></ng-content>
+              </p>
             </code></pre>
           </section>
           <section>
-            Consider viewEncapsulation on
+            <!-- break up example TODO! -->
+            <h2>viewEncapsulation</h2>
+            <h2 class="fragment">On VS Off</h2>
             <pre class="fragment"><code class="CSS" data-trim contenteditable>
               /* CSS file */
               :host {
                 display: block;
               }
               :host(.big) .card {
-                max-width: 700px;
+                width: 700px;
               }
               .card {
                 width: 200px;
@@ -330,54 +347,96 @@
             </code></pre>
 
             <pre class="fragment"><code class="HTML" data-trim contenteditable>
-              <app-card class="big"></app-card>
+              <app-card class="big" style="margin: 10px"></app-card>
             </code></pre>
-            Or shadowDom
+            <h2 class="fragment">ShadowDom</h2>
           </section>
         </section>
         <section>
           <section>
-            Tips n Trics
+            <h1>Tips n Trics</h1>
           </section>
           <section>
-            Use CSS varables whenever possible Use SCSS whenever possible
+            <h2>Don't support IE11</h2>
+            <div class="flexrox">
+              <img src="media/browsers/chrome.svg" class="browser-img fragment" />
+              <img src="media/browsers/ff.svg" class="browser-img fragment" />
+              <img src="media/browsers/opera icon.svg" class="browser-img fragment" />
+              <img src="media/browsers/edge.svg" class="browser-img fragment" />
+              <img src="media/browsers/safari.svg" class="browser-img fragment" />
+            </div>
           </section>
           <section>
-            Emprace Typescript Types and return type on everything StrictNullChecks All angular checks
+            <h1>Use SCSS</h1>
+            <h2 class="fragment">Structure</h2>
+            <h2 class="fragment">Functions</h2>
+            <h2 class="fragment">Easier syntax</h2>
           </section>
           <section>
-            Conventional changelog feat(popup): Added close button bug(button): Fixed hover effect refactor(table):
-            Improved speed
+            <!--  TODO example -->
+            <h2 class="">Use CSS variables</h2>
+            <pre class="fragment"><code class="CSS" data-trim contenteditable>
+              --color-primary: red;
+              --color-secondary: blue;
+
+              p {
+                color: var(--color-primary);
+              }
+            </code></pre>
+            <h3 class="fragment">No need to import scss file</h3>
+            <h3 class="fragment">Dynamic switching to dark theme</h3>
+            <h3 class="fragment">Change colors in on the fly</h3>
+            <h3 class="fragment">Can use in calc()</h3>
           </section>
           <section>
-            Use Kanban for Design system Need to be able to adapt quicly Locking down a print is bad
+            <h2>Embrace <span class="typescript">Typescript</span></h2>
+            <h3 class="fragment">Types on everything</h3>
+            <h3 class="fragment typescript">StrictNullChecks</h3>
+            <h3 class="fragment">All angular checks</h3>
           </section>
           <section>
-            Use prettier No more fights over formatting
+            <h2>Conventional changelog</h2>
+            <h3 class="fragment">feat(popup): Added close button</h3>
+            <h3 class="fragment">bug(button): Fixed hover effect</h3>
+            <h3 class="fragment">refactor(table): Improved speed</h3>
           </section>
           <section>
-            Open source
+            <h2>Use Kanban</h2>
+            <h3 class="fragment">Need to be able to adapt quicly</h3>
+            <h3 class="fragment">Locking down a sprint is bad</h3>
+          </section>
+          <section>
+            <h2>Use prettier</h2>
+            <h3 class="fragment">No more fights over formatting</h3>
+          </section>
+          <section>
+            <h2>Open source</h2>
           </section>
         </section>
         <section>
           <section>
-            What to keep in mind
+            <h2>What to keep in mind</h2>
           </section>
           <section>
-            Cant use design system on native mobile Then use design tokens A more abstract design system
+            <h2>Cant use design system on native mobile</h2>
+            <h3 class="fragment">Then use design tokens</h3>
+            <h3 class="fragment">A more abstract design system</h3>
           </section>
           <section>
-            Dont use Angular if everyone knows for example Vue
+            <h3>Dont use Angular if everyone knows Vue</h3>
           </section>
           <section>
-            Consider maike directly as web components
+            <h3>Consider making directly as web components</h3>
           </section>
           <section>
-            Creating a design system is not easy
+            <h3>Creating a design system is not easy</h3>
+            <h2 class="fragment">But worth it</h2>
           </section>
         </section>
         <section>
-          Conclution
+          <h1>Thanks for listening!</h1>
+          <h1 class="fragment"><span class="bcc">Curious</span> Programming</h1>
+          <h2 class="fragment">Subscribe for <span class="bcc">videos</span> 📺</h2>
         </section>
       </div>
     </div>
