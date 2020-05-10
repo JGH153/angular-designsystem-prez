@@ -37,3 +37,41 @@
 .elvia {
 	color: #28F400 !important;
 }
+
+.backstop {
+	color: #676156 !important;
+}
+
+.major-c {
+	color: #B70010 !important;
+}
+.minor-c {
+	color: #26881F !important;
+}
+.patch-c {
+	color: #CCCCCC !important;
+}
+
+.github-actions {
+	color: rgb(32, 136, 255) !important;
+}
+
+.scss {
+	color: #CF649A !important;
+}
+
+.dark-theme {
+	/* color: #000000 !important; */
+}
+
+.prettier {
+	color: rgb(198, 149, 200) !important;
+}
+
+.vue {
+	color: #4FC08D !important;
+}
+
+.react {
+	color: #5ED4F4 !important;
+}

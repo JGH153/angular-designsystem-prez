@@ -92,11 +92,8 @@
         user-select: none;
       }
 
-      .tab-icon {
-        width: 200px;
-      }
-      .arrows-icon {
-        width: 100px;
+      .icon {
+        width: 40px;
       }
 
       .big-text {
@@ -114,7 +111,12 @@
         font-size: 65px;
         width: 80% !important;
       }
-      
+
+      .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
@@ -171,10 +173,10 @@
           <h2 class="fragment">The single source of truth</h2>
           <!-- on how applications should look and behave -->
           <h3 class="fragment">
-            <span class="comic">Font</span> 
-            , 
-            <span class="angular">color</span> 
-            , 
+            <span class="comic">Font</span>
+            ,
+            <span class="angular">color</span>
+            ,
             <span class="med-text">sizing</span>
             , etc
           </h3>
@@ -233,29 +235,34 @@
           </section>
           <!-- TODO illustration -->
           <section>
-            <h3>Pure styling core (CSS + HTML)</h3>
-            <h3 class="fragment">Component library (JS/TS)</h3>
+            <h3>Pure styling core (<span class="css">CSS</span> + <span class="html">HTML</span>)</h3>
+            <h3 class="fragment">Component library (<span class="js">JS</span>/<span class="typescript">TS</span>)</h3>
           </section>
         </section>
 
         <section>
           <h1>Component library</h1>
-          <h2 class="fragment">Ready to use components like buttons, cards and dialogs</h2>
+          <h2 class="fragment">Ready to use components</h2>
+          <h3 class="fragment">Like buttons, cards and dialogs</h3>
           <h3 class="fragment">From a simple divider to a complex table</h3>
         </section>
         <section>
           <section>
-            <h2>CSS is cheap, JS is expensive</h2>
-            <h3 class="fragment">Should make as much as possible in CSS</h3>
-            <h3 class="fragment">The limiting of CSS is good</h3>
+            <h2>
+              <span class="css">CSS</span> is cheap<span class="fragment"
+                >, <span class="js">JS</span> is expensive</span
+              >
+            </h2>
+            <h3 class="fragment">Make as much as possible in <span class="css">CSS</span></h3>
+            <h3 class="fragment">The limitations of <span class="css">CSS</span> is good</h3>
           </section>
           <section>
             <h2>Need a framework</h2>
             <h2 class="fragment">Pure web components are too basic</h2>
-            <h1 class="fragment">Angular</h1>
+            <h1 class="fragment angular">Angular</h1>
           </section>
           <section>
-            <h2>Angular</h2>
+            <h2 class="angular">Angular</h2>
             <!--  TODO also has biggest feature set -->
             <table>
               <tbody>
@@ -273,7 +280,7 @@
                 </tr>
                 <tr>
                   <td class="fragment">Compiles to web components</td>
-                  <td class="fragment">Can use in Vue and React!</td>
+                  <td class="fragment">Can use in <span class="vue">Vue</span> and <span class="react">React</span>!</td>
                 </tr>
                 <tr>
                   <td class="fragment">Opinionated Architecture</td>
@@ -295,40 +302,49 @@
             </table>
           </section>
           <section>
-            <h2>ng add @company/component-library</h2>
-            <h2 class="fragment">Automatic install and setup</h2>
+            <pre class=""><code class="BASH" data-trim contenteditable>
+              ng add @company/component-library
+            </code></pre>
+            <h2 class="fragment">Automatic install, and setup</h2>
             <h2 class="fragment">playground/doc + publisable library</h2>
           </section>
           <section>
             <!-- todo fix where did we put it -->
-            <h2>What do i put in the component library?</h2>
+            <h2>What to put in the component library?</h2>
             <h2 class="fragment">Only components that require logic (JS/TS)</h2>
             <h2 class="fragment">First try to put in css core</h2>
             <h2 class="fragment">Bare minimum css in angular project</h2>
           </section>
           <section>
-            <h2>Build on top of angular material</h2>
+            <h2>Build on top of <span class="angular">angular material</span></h2>
             <h2 class="fragment">Table, select, modal</h2>
             <h2 class="fragment">Don't reinvent the wheel</h2>
           </section>
           <section>
             <!--  fix all is comp lib -->
             <h1>Testing</h1>
-            <h3 class="fragment">CSS testing is hard</h3>
-            <h3 class="fragment">Test everyting in component library</h3>
+            <h3 class="fragment"><span class="css">CSS</span> testing is hard</h3>
+            <h3 class="fragment"><span class="backstop">BackstopJS</span>, visual regression testing</h3>
+            <h3 class="fragment">Test everything in component library</h3>
             <h3 class="fragment">Unit and E2E (Cypress)</h3>
           </section>
         </section>
         <section>
-          <h2>Publish each merge to master</h2>
-          <h3 class="fragment">Semantic versioning 10.5.1</h3>
-          <h3 class="fragment">(Major.Minor.Patch)</h3>
-          <h3 class="fragment">Github action</h3>
-          <h3 class="fragment">Shortest possible time from request to publish</h3>
+          <!-- <h2>CI/CD</h2> -->
+          <h2>Publish everything</h2>
+          <h3 class="fragment">
+            Semantic versioning (<span class="major-c">Major</span>.<span class="minor-c">Minor</span>.<span
+              class="patch-c"
+              >Patch</span
+            >)
+          </h3>
+          <!-- <h3 class="fragment">(Major.Minor.Patch)</h3> -->
+          <h3 class="fragment github-actions">Github actions</h3>
+          <h3 class="fragment">Shortest turnaround</h3>
         </section>
         <section>
           <section>
-            <h2>Angular tips n trics</h2>
+            <h2><span class="angular">Angular</span> tips n trics</h2>
           </section>
           <section>
             <h2>ChangeDetectionStrategy.OnPush</h2>
@@ -388,14 +404,14 @@
             </div>
           </section>
           <section>
-            <h1>Use SCSS</h1>
+            <h1>Use <span class="scss">SCSS</span></h1>
             <h2 class="fragment">Structure</h2>
             <h2 class="fragment">Functions</h2>
             <h2 class="fragment">Easier syntax</h2>
           </section>
           <section>
             <!--  TODO example -->
-            <h2 class="">Use CSS variables</h2>
+            <h2 class="">Use <span class="css">CSS</span> variables</h2>
             <pre class="fragment"><code class="CSS" data-trim contenteditable>
               --color-primary: red;
               --color-secondary: blue;
@@ -404,16 +420,16 @@
                 color: var(--color-primary);
               }
             </code></pre>
-            <h3 class="fragment">No need to import scss file</h3>
-            <h3 class="fragment">Dynamic switching to dark theme</h3>
+            <h3 class="fragment">No need to import <span class="scss">SCSS</span> file</h3>
+            <h3 class="fragment">Dynamic switching to <span class="dark-theme">dark</span> theme</h3>
             <h3 class="fragment">Change colors in on the fly</h3>
-            <h3 class="fragment">Can use in calc()</h3>
+            <!-- <h3 class="fragment">Can use in calc()</h3> -->
           </section>
           <section>
             <h2>Embrace <span class="typescript">Typescript</span></h2>
             <h3 class="fragment">Types on everything</h3>
             <h3 class="fragment typescript">StrictNullChecks</h3>
-            <h3 class="fragment">All angular checks</h3>
+            <h3 class="fragment">All <span class="angular">Angular</span> checks</h3>
           </section>
           <section>
             <h2>Conventional changelog</h2>
@@ -422,29 +438,30 @@
             <h3 class="fragment">refactor(table): Improved speed</h3>
           </section>
           <section>
-            <h2>Use <span class="kanban">Kanban</span</h2>
-            <h3 class="fragment">Need to be able to adapt quicly</h3>
+            <h2>Use <span class="kanban">Kanban</span></h2>
+            <h3 class="fragment">Need to be able to adapt quickly</h3>
             <h3 class="fragment">Locking down a sprint is bad</h3>
           </section>
           <section>
-            <h2>Use prettier</h2>
-            <h3 class="fragment">No more fights over formatting</h3>
+            <h2>Use <span class="prettier">prettier</span></h2>
+            <h3 class="fragment">No more fights over formatting ⚔️</h3>
           </section>
-          <section>
+          <!-- <section>
             <h2>Open source</h2>
-          </section>
+          </section> -->
         </section>
         <section>
           <section>
-            <h2>What to keep in mind</h2>
+            <h2>What to keep in mind 💭</h2>
           </section>
           <section>
-            <h2>Cant use design system on native mobile</h2>
-            <h3 class="fragment">Then use design tokens</h3>
+            <h2>Design system on native mobile</h2>
+            <h2>Can't use <span class="css">CSS</span>, <span class="js">JS</span> or <span class="html">HTML</span></h2>
+            <h3 class="fragment flex-center">Consider design tokens <img src="media/chip.png" class="icon no-img-outline" style="margin-left: 10px !important;" ></h3>
             <h3 class="fragment">A more abstract design system</h3>
           </section>
           <section>
-            <h3>Dont use Angular if everyone knows Vue</h3>
+            <h3>Dont use <span class="angular">Angular</span> if everyone knows <span class="vue">Vue</span></h3>
           </section>
           <section>
             <h3>Consider making directly as web components</h3>
