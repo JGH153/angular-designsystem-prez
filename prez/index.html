@@ -63,6 +63,16 @@
         box-shadow: none !important;
       }
 
+      .framework-img {
+        width: 200px;
+        height: 200px;
+        margin: 0px !important;
+        margin-right: 10px !important;
+        background: unset !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+
       .no-img-outline {
         margin: 0px !important;
         margin-right: 10px !important;
@@ -117,19 +127,37 @@
         align-items: center;
         justify-content: center;
       }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadein 1.5s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
         <section>
-          <h2>
-            Why <span class="big-text angular">Angular</span> is the best
-            <span class="big-text typescript">framework</span> for a
-            <span class="big-text js">design-system</span>
-          </h2>
-          <!-- <h3>Jan Greger Hemb</h3> -->
-          <!-- <h3>Computas</h3> -->
+          <section>
+            <h2>
+              Why <span class="big-text angular">Angular</span> is the best
+              <span class="big-text typescript">framework</span> for a
+              <span class="big-text js">design-system</span>
+            </h2>
+          </section>
+          <section>
+            <h3>Jan Greger Hemb</h3>
+            <h3>Computas</h3>
+          </section>
         </section>
         <section>
           <h1>Thy Demo</h1>
@@ -144,10 +172,10 @@
             <h3 class="fragment">Recent push to digital solutions</h3>
           </section>
           <section>
-            <h3>Wanted rapid development of new systems</h3>
+            <h3>Needed rapid development of new systems</h3>
           </section>
           <section>
-            <h3>Each team had their own idea of what a website is</h3>
+            <h3>No shared design language</h3>
           </section>
           <section>
             <h2>Copy and paste</h2>
@@ -158,15 +186,47 @@
             <h2 class="fragment">Re-invented the wheel</h2>
           </section>
           <section>
-            <h2>Needed a solution</h2>
+            <h3 class="">We want a consistent design</h3>
+            <h3 class="fragment">And a consistent user experience</h3>
+            <h3 class="fragment">At a high development speed</h3>
+            <!-- find better word-->
+            <!-- <h2 class="fragment">Need a standard</h2> -->
           </section>
-        </section>
-        <section>
-          <h2>Making websites is hard</h2>
-          <h3 class="fragment">And we want a consistent design</h3>
-          <h3 class="fragment">And a consistent user experience</h3>
-          <h3 class="fragment">At high dev speed</h3>
-          <h2 class="fragment">Need a standard</h2>
+          <section>
+            <h2>Need to support/handle:</h2>
+            <div class="fragment addFadeinBelow">
+              <span style="animation-delay: 100ms;">• The blind</span>
+              <span style="animation-delay: 150ms;">• All major browsers on desktop</span>
+              <span style="animation-delay: 200ms;">• All major browsers on mobile</span>
+              <span style="animation-delay: 250ms;">• The deaf</span>
+              <span style="animation-delay: 300ms;">• Visually impaired</span>
+              <span style="animation-delay: 350ms;">• Huge 4k devices</span>
+              <span style="animation-delay: 400ms;">• Tiny 320px mobiles</span>
+              <span style="animation-delay: 450ms;">• Everything in between</span>
+              <span style="animation-delay: 500ms;">• Zoomin on the website without breaking</span>
+              <span style="animation-delay: 550ms;">• Gdpr</span>
+              <span style="animation-delay: 600ms;">• Need to look amazing and cutting edge</span>
+              <span style="animation-delay: 650ms;">• Needs to load fast on horrible connections and devices</span>
+              <span style="animation-delay: 700ms;">• Pwa, work offline</span>
+              <span style="animation-delay: 750ms;">• And also be innovative and useful!</span>
+              <span style="animation-delay: 800ms;">• Responsive web design</span>
+              <span style="animation-delay: 850ms;">• css pre-processor</span>
+              <span style="animation-delay: 900ms;">• build system like webpack</span>
+              <span style="animation-delay: 950ms;">• And 95% or more test coverage</span>
+              <span style="animation-delay: 1000ms;">• Pixel perfect across all browsers</span>
+              <span style="animation-delay: 1050ms;"
+                >• Needs to be a single page application, but each route should be lazy loaded</span
+              >
+              <span style="animation-delay: 1100ms;"
+                >• Development needs to adept quickly to changes in requirements</span
+              >
+              <span style="animation-delay: 1150ms;">• The website should be easily to change to new framework</span>
+              <span style="animation-delay: 1200ms;">• Synthetic test data</span>
+            </div>
+          </section>
+          <section>
+            <h1>Needed a solution</h1>
+          </section>
         </section>
         <section>
           <h1>A Design System</h1>
@@ -212,37 +272,45 @@
             <h1>Story continue 📖</h1>
           </section>
           <section>
-            <h3>Had several websites already</h3>
-            <h3 class="fragment">In different frameworks</h3>
-            <h3 class="fragment">Needed a design system that worked everywhere</h3>
+            <h2>Had several websites already</h2>
+            <h2 class="fragment">In different frameworks</h2>
+            <h2 class="fragment">Needed to work everywhere</h2>
           </section>
           <section>
-            <h3><span class="css">CSS</span> only is a start</h3>
-            <h3 class="fragment">Need logic Popup, table, select</h3>
+            <h2>What to make it in?</h2>
+            <h2 class="fragment"><span class="css">CSS</span> only is a start</h2>
+            <h2 class="fragment">Need logic popups, tables, gallery</h2>
           </section>
           <section>
-            <h3>Needed to be easy to use</h3>
+            <h2>Needed to be easy to use</h2>
             <h3 class="fragment">In all projects</h3>
-            <h3 class="fragment">And frameworks</h3>
-            <!--  TODO framework logos -->
+            <!-- <h3 class="fragment">And frameworks</h3> -->
+            <div class="flexrox">
+              <img src="media/logos/vue1.png" class="framework-img fragment" />
+              <img src="media/logos/angular1.png" class="framework-img fragment" />
+              <img src="media/logos/react.png" class="framework-img fragment" />
+            </div>
           </section>
           <section>
-            <h3>Needed good documentation</h3>
-            <h2 class="fragment">And marketing</h2>
+            <h2>Needed good documentation</h2>
+            <h1 class="fragment">And marketing</h1>
           </section>
           <section>
             <h2>Landed on a two part system</h2>
           </section>
           <!-- TODO illustration -->
           <section>
-            <h3>Pure styling core (<span class="css">CSS</span> + <span class="html">HTML</span>)</h3>
-            <h3 class="fragment">Component library (<span class="js">JS</span>/<span class="typescript">TS</span>)</h3>
+            <h2>Pure <span class="css">CSS</span> core (+ <span class="html">HTML</span>)</h2>
+            <h2 class="fragment"><span class="css">CSS</span> classes</h2>
+            <h2 class="fragment">Component library (<span class="js">JS</span>/<span class="typescript">TS</span>)</h2>
+            <h2 class="fragment">Advanced components</h2>
           </section>
         </section>
 
         <section>
           <h1>Component library</h1>
           <h2 class="fragment">Ready to use components</h2>
+          <!-- change excample. move to css core part?  -->
           <h3 class="fragment">Like buttons, cards and dialogs</h3>
           <h3 class="fragment">From a simple divider to a complex table</h3>
         </section>
@@ -257,8 +325,8 @@
             <h3 class="fragment">The limitations of <span class="css">CSS</span> is good</h3>
           </section>
           <section>
-            <h2>Need a framework</h2>
-            <h2 class="fragment">Pure web components are too basic</h2>
+            <h2>Needed a framework</h2>
+            <h2 class="fragment">Pure <span class="web-components">web components</span> are too basic</h2>
             <h1 class="fragment angular">Angular</h1>
           </section>
           <section>
@@ -267,20 +335,14 @@
             <table>
               <tbody>
                 <tr>
-                  <td class="fragment">Schematics</td>
-                  <td class="fragment">Auto install and update</td>
-                </tr>
-                <tr>
-                  <td class="fragment">DI system</td>
-                  <td class="fragment">Reusable services</td>
-                </tr>
-                <tr>
-                  <td class="fragment">The most powerful CLI</td>
+                  <td class="fragment">The most powerful <span class="cli">CLI</span></td>
                   <td class="fragment">Library support</td>
                 </tr>
                 <tr>
-                  <td class="fragment">Compiles to web components</td>
-                  <td class="fragment">Can use in <span class="vue">Vue</span> and <span class="react">React</span>!</td>
+                  <td class="fragment">Compiles to <span class="web-components">web components</span></td>
+                  <td class="fragment">
+                    Can use in <span class="vue">Vue</span> and <span class="react">React</span>!
+                  </td>
                 </tr>
                 <tr>
                   <td class="fragment">Opinionated Architecture</td>
@@ -288,15 +350,23 @@
                 </tr>
                 <tr>
                   <td class="fragment">Reduce bundle size</td>
-                  <td class="fragment">Angular 9 IVY</td>
+                  <td class="fragment"><span class="angular">Angular</span> 9 IVY</td>
                 </tr>
                 <tr>
-                  <td class="fragment">Angular CDK</td>
+                  <td class="fragment"><span class="angular">Angular</span> CDK</td>
                   <td class="fragment">Drag n drop, virtual scroll</td>
+                </tr>
+                <tr>
+                  <td class="fragment">DI system</td>
+                  <td class="fragment">Reusable services</td>
                 </tr>
                 <tr>
                   <td class="fragment">Complete framework</td>
                   <td class="fragment">Everything needed</td>
+                </tr>
+                <tr>
+                  <td class="fragment">Schematics</td>
+                  <td class="fragment">Auto install and update</td>
                 </tr>
               </tbody>
             </table>
@@ -305,33 +375,45 @@
             <pre class=""><code class="BASH" data-trim contenteditable>
               ng add @company/component-library
             </code></pre>
-            <h2 class="fragment">Automatic install, and setup</h2>
-            <h2 class="fragment">playground/doc + publisable library</h2>
+            <h2 class="fragment">Auto install, and setup</h2>
+            <pre class="fragment"><code class="BASH" data-trim contenteditable>
+              ng update @company/component-library
+            </code></pre>
+            <h2 class="fragment">Auto update</h2>
+            <pre class="fragment"><code class="BASH" data-trim contenteditable>
+              ng generate library my-component-library
+            </code></pre>
+            <h2 class="fragment">Auto setup new library</h2>
           </section>
           <section>
-            <!-- todo fix where did we put it -->
-            <h2>What to put in the component library?</h2>
-            <h2 class="fragment">Only components that require logic (JS/TS)</h2>
-            <h2 class="fragment">First try to put in css core</h2>
-            <h2 class="fragment">Bare minimum css in angular project</h2>
-          </section>
-          <section>
-            <h2>Build on top of <span class="angular">angular material</span></h2>
+            <h2>Build on top of <span class="angular">Angular material</span></h2>
             <h2 class="fragment">Table, select, modal</h2>
             <h2 class="fragment">Don't reinvent the wheel</h2>
           </section>
-          <section>
-            <!--  fix all is comp lib -->
-            <h1>Testing</h1>
-            <h3 class="fragment"><span class="css">CSS</span> testing is hard</h3>
-            <h3 class="fragment"><span class="backstop">BackstopJS</span>, visual regression testing</h3>
-            <h3 class="fragment">Test everything in component library</h3>
-            <h3 class="fragment">Unit and E2E (Cypress)</h3>
-          </section>
         </section>
         <section>
+          <!-- todo fix where did we put it -->
+          <h2>What goes in the component library?</h2>
+          <h3 class="fragment">
+            Only components that require <span class="js">JS</span>/<span class="typescript">TS</span>
+          </h3>
+          <h3 class="fragment">First try to put in <span class="css">CSS</span> core</h3>
+          <h3 class="fragment">
+            Bare minimum <span class="css">CSS</span> in <span class="angular">Angular</span> project
+          </h3>
+        </section>
+        <section>
+          <!--  fix all is comp lib -->
+          <h1>Testing</h1>
+          <h3 class="fragment"><span class="css">CSS</span> testing is hard</h3>
+          <h3 class="fragment"><span class="backstop">BackstopJS</span>, visual regression testing</h3>
+          <h3 class="fragment">Test everything in component library</h3>
+          <h3 class="fragment">Unit and E2E (Cypress)</h3>
+        </section>
+
+        <section>
           <!-- <h2>CI/CD</h2> -->
-          <h2>Publish everything</h2>
+          <h1>Publish everything</h1>
           <h3 class="fragment">
             Semantic versioning (<span class="major-c">Major</span>.<span class="minor-c">Minor</span>.<span
               class="patch-c"
@@ -340,30 +422,53 @@
           </h3>
           <!-- <h3 class="fragment">(Major.Minor.Patch)</h3> -->
           <h3 class="fragment github-actions">Github actions</h3>
+          <h3 class="fragment">Merge to master ➡️ <span class="fragment">Publish</span></h3>
           <h3 class="fragment">Shortest turnaround</h3>
         </section>
+
+        <section>
+          <h1>Documentation</h1>
+          <h3 class="fragment">Each part self documenting</h3>
+          <h3 class="fragment">Best practice in <span class="css">CSS</span> core</h3>
+          <h3 class="fragment">The first you will read</h3>
+        </section>
+
         <section>
           <section>
-            <h2><span class="angular">Angular</span> tips n trics</h2>
+            <h1><span class="angular">Angular</span> tips n tricks</h1>
           </section>
           <section>
             <h2>ChangeDetectionStrategy.OnPush</h2>
             <h3 class="fragment">Takes control over change detection</h3>
-            <h3 class="fragment">Still runs on inputs and outputs update</h3>
+            <h3 class="fragment">Reduce re-renders</h3>
           </section>
           <section>
-            <h2>use ngProjectAs and select</h2>
+            <h2>Input as <span class="html">HTML</span></h2>
+            <pre class="fragment"><code class="HTML" data-trim contenteditable>
+              <my-component content="Hello"></my-component> 
+
+              <!-- VS -->
+
+              <my-component>
+                <p>Hello</p>
+              </my-component>
+            </code></pre>
+          </section>
+          <section>
+            <h1 class="">ngProjectAs + select</h1>
             <pre class="fragment"><code class="HTML" data-trim contenteditable>
               <my-component>
                 <ng-container ngProjectAs="pageTitle">My Page Title</ng-container>
                 <ng-container ngProjectAs="pageContent">My Page Title</ng-container>
               </my-component>
+            </code></pre>
+            <pre class="fragment"><code class="HTML" data-trim contenteditable>
               
-              // in my-component
-              <ng-content select="pageTitle"></ng-content>
-              <p>
-                <ng-content select="pageContent"></ng-content>
-              </p>
+            // inside  my-component
+            <ng-content select="pageTitle"></ng-content>
+            <p>
+              <ng-content select="pageContent"></ng-content>
+            </p>
             </code></pre>
           </section>
           <section>
@@ -391,10 +496,10 @@
         </section>
         <section>
           <section>
-            <h1>Tips n Trics</h1>
+            <h1>tips n tricks</h1>
           </section>
           <section>
-            <h2>Don't support IE11</h2>
+            <h1>Don't support IE</h1>
             <div class="flexrox">
               <img src="media/browsers/chrome.svg" class="browser-img fragment" />
               <img src="media/browsers/ff.svg" class="browser-img fragment" />
@@ -402,6 +507,7 @@
               <img src="media/browsers/edge.svg" class="browser-img fragment" />
               <img src="media/browsers/safari.svg" class="browser-img fragment" />
             </div>
+            <h2 class="fragment"><span class="css">CSS</span> variables, Grid, Flex</h2>
           </section>
           <section>
             <h1>Use <span class="scss">SCSS</span></h1>
@@ -413,15 +519,17 @@
             <!--  TODO example -->
             <h2 class="">Use <span class="css">CSS</span> variables</h2>
             <pre class="fragment"><code class="CSS" data-trim contenteditable>
-              --color-primary: red;
-              --color-secondary: blue;
+              :root {
+                --color-primary: red;
+                --color-secondary: blue;
+              }
 
               p {
                 color: var(--color-primary);
               }
             </code></pre>
             <h3 class="fragment">No need to import <span class="scss">SCSS</span> file</h3>
-            <h3 class="fragment">Dynamic switching to <span class="dark-theme">dark</span> theme</h3>
+            <h3 class="fragment">Dynamic switch to <span class="dark-theme">dark</span> theme</h3>
             <h3 class="fragment">Change colors in on the fly</h3>
             <!-- <h3 class="fragment">Can use in calc()</h3> -->
           </section>
@@ -456,15 +564,20 @@
           </section>
           <section>
             <h2>Design system on native mobile</h2>
-            <h2>Can't use <span class="css">CSS</span>, <span class="js">JS</span> or <span class="html">HTML</span></h2>
-            <h3 class="fragment flex-center">Consider design tokens <img src="media/chip.png" class="icon no-img-outline" style="margin-left: 10px !important;" ></h3>
+            <h2 class="fragment">
+              Can't use <span class="css">CSS</span>, <span class="js">JS</span> or <span class="html">HTML</span>
+            </h2>
+            <h3 class="fragment flex-center">
+              Consider design tokens
+              <img src="media/chip.png" class="icon no-img-outline" style="margin-left: 10px !important;" />
+            </h3>
             <h3 class="fragment">A more abstract design system</h3>
           </section>
           <section>
-            <h3>Dont use <span class="angular">Angular</span> if everyone knows <span class="vue">Vue</span></h3>
+            <h1>Don't use <span class="angular">Angular</span> if everyone knows <span class="vue">Vue</span></h1>
           </section>
           <section>
-            <h3>Consider making directly as web components</h3>
+            <h2>Consider making directly as <span class="web-components">web&nbsp;components</span></h2>
           </section>
           <section>
             <h3>Creating a design system is not easy</h3>
@@ -473,6 +586,7 @@
         </section>
         <section>
           <h1>Thanks for listening!</h1>
+          <h2 class="fragment">Jan Greger Hemb</h2>
           <h1 class="fragment"><span class="bcc">Curious</span> Programming</h1>
           <h2 class="fragment">Subscribe for <span class="bcc">videos</span> 📺</h2>
         </section>
@@ -496,6 +610,14 @@
           { src: "plugin/highlight/highlight.js" },
           { src: "plugin/notes/notes.js", async: true },
         ],
+      });
+
+      Reveal.addEventListener("fragmentshown", function (event) {
+        if (event.fragment.classList.value.includes("addFadeinBelow")) {
+          Array.from(event.fragment.children).forEach((current) => {
+            current.classList.add("fade-in");
+          });
+        }
       });
     </script>
   </body>
