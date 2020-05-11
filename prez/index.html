@@ -149,6 +149,11 @@
       .black-stroke {
         -webkit-text-stroke: 2px black;
       }
+      .black-stroke h1,
+      .black-stroke h2,
+      .black-stroke h3 {
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 1) !important;
+      }
 
       .black-stroke-thin {
         -webkit-text-stroke: 1px black;
@@ -159,14 +164,19 @@
       }
 
       .backdrop-default {
-        backdrop-filter: blur(2px) opacity(80%);
+        backdrop-filter: blur(4px) opacity(20%);
       }
 
-      .background-blur {
+      .backdrop-block {
         filter: blur(3px);
       }
+
       .no-filter {
         filter: unset;
+      }
+
+      .large-list {
+        font-size: 40px;
       }
     </style>
   </head>
@@ -205,28 +215,28 @@
             <h3>Needed rapid development of new systems</h3>
             <h1 class="opacity-hidden">1</h1>
             <h1 class="opacity-hidden">1</h1>
-          </section> 
-          <section class="black-stroke " data-background="media/stock/language.jpg">
+          </section>
+          <section class="black-stroke" data-background="media/stock/language.jpg">
             <h2 class="">No shared design language</h2>
           </section>
-          <section class="black-stroke" data-background="media/stock/abandoned.jpg"> 
+          <section class="black-stroke" data-background="media/stock/abandoned.jpg">
             <h2>Copy and paste</h2>
             <h2 class="fragment">With bugs</h2>
           </section>
-          <section  class="black-stroke" data-background="media/stock/slow.jpg">
+          <section class="black-stroke" data-background="media/stock/slow.jpg">
             <h2>Making a new site took too long</h2>
             <h1 class="fragment">Re-invented the wheel</h1>
           </section>
-          <section  class="black-stroke" data-background="media/stock/abandoned.jpg">
-            <h3 class="">We want a consistent design</h3>
-            <h3 class="fragment">And a consistent user experience</h3>
-            <h3 class="fragment">At a high development speed</h3>
+          <section class="black-stroke" data-background="media/stock/abandoned.jpg">
+            <h2 class="">A consistent design</h2>
+            <h2 class="fragment">A consistent user experience</h2>
+            <h2 class="fragment">At a high development speed</h2>
             <!-- find better word-->
             <!-- <h2 class="fragment">Need a standard</h2> -->
           </section>
           <section>
             <h2>Need to support/handle:</h2>
-            <div class="fragment addFadeinBelow">
+            <div class="fragment addFadeinBelow large-list">
               <span style="animation-delay: 100ms;">• The blind</span>
               <span style="animation-delay: 150ms;">• All major browsers on desktop</span>
               <span style="animation-delay: 200ms;">• All major browsers on mobile</span>
@@ -256,7 +266,7 @@
               <span style="animation-delay: 1200ms;">• Synthetic test data</span>
             </div>
           </section>
-          <section>
+          <section class="black-stroke" data-background="media/stock/looking.jpg">
             <h1>Needed a solution</h1>
           </section>
         </section>
@@ -276,8 +286,8 @@
           <h3 class="fragment">Re-usable elements</h3>
           <!-- <h3 class="fragment">Toolkit (and framework) for rapitly creating new websites</h3> -->
         </section>
-        <section>
-          <blockquote class="big-blockquote">
+        <section class="" data-background="media/stock/looking.jpg">
+          <blockquote class="big-blockquote backdrop-default">
             Design systems are the solution to the problem of how to enable rapid development and innovation while
             maintaining a consistent user experience, and design.
           </blockquote>
@@ -286,7 +296,8 @@
           <section>
             <h1>Material Design</h1>
           </section>
-          <section data-background="media/materialdesign/frontpage.png" style="top: 0px !important;"></section>
+          <section data-background="media/materialdesign/frontpage.png" style="top: 0px !important;">
+          </section>
           <section data-background="media/materialdesign/button demo.png" style="top: 0px !important;"></section>
           <section data-background="media/materialdesign/placement.png" style="top: 0px !important;"></section>
         </section>
