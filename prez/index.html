@@ -103,14 +103,7 @@
       }
 
       .icon {
-        width: 40px;
-      }
-
-      .big-text {
-        font-size: 100px;
-      }
-      .med-text {
-        font-size: 80px;
+        width: 50px;
       }
 
       .comic {
@@ -139,6 +132,24 @@
         }
         to {
           opacity: 1;
+        }
+      }
+
+      .color-animation {
+        animation: colorLoop 0.7s infinite;
+        animation-direction: alternate;
+        color: white;
+      }
+
+      @keyframes colorLoop {
+        0% {
+          color: #dd0031;
+        }
+        50% {
+          color: #4fc08d;
+        }
+        100% {
+          color: #5ed4f4;
         }
       }
 
@@ -178,6 +189,27 @@
       .large-list {
         font-size: 40px;
       }
+
+      .intro-title {
+        font-size: 1.65em;
+        /* font-size: 1.75em; */
+      }
+
+      .big-text {
+        font-size: 1.7em;
+        /* font-size: 1.80em; */
+      }
+      .med-text {
+        font-size: 80px;
+      }
+
+      .material-icon {
+        width: 100px;
+      }
+
+      .no-bold {
+        font-weight: normal;
+      }
     </style>
   </head>
   <body>
@@ -185,7 +217,7 @@
       <div class="slides">
         <section>
           <section>
-            <h2>
+            <h2 class="intro-title">
               Why <span class="big-text angular">Angular</span> is the best
               <span class="big-text typescript">framework</span> for a
               <span class="big-text js">design-system</span>
@@ -196,14 +228,11 @@
             <h3>Computas</h3>
           </section>
         </section>
-        <section data-background="media/stock/adventureStart.jpeg">
-          Outline?
-        </section>
         <section>
           <h1>Thy Demo</h1>
         </section>
         <section>
-          <section class="black-stroke" data-background="media/stock/treeLook.jpg">
+          <section class="black-stroke" data-background="media/stock/adventureStart.jpeg">
             <h1>Story time 📚</h1>
           </section>
           <section class="black-stroke" data-background="media/stock/creativ.jpg">
@@ -220,17 +249,18 @@
             <h2 class="">No shared design language</h2>
           </section>
           <section class="black-stroke" data-background="media/stock/abandoned.jpg">
-            <h2>Copy and paste</h2>
-            <h2 class="fragment">With bugs</h2>
+            <h1>Copy and paste</h1>
+            <h1 class="fragment">With bugs</h1>
           </section>
           <section class="black-stroke" data-background="media/stock/slow.jpg">
             <h2>Making a new site took too long</h2>
             <h1 class="fragment">Re-invented the wheel</h1>
           </section>
-          <section class="black-stroke" data-background="media/stock/abandoned.jpg">
+          <section class="black-stroke" data-background="media/stock/mountanSky.jpeg">
             <h2 class="">A consistent design</h2>
             <h2 class="fragment">A consistent user experience</h2>
             <h2 class="fragment">At a high development speed</h2>
+            <h2 class="opacity-hidden">1</h2>
             <!-- find better word-->
             <!-- <h2 class="fragment">Need a standard</h2> -->
           </section>
@@ -274,13 +304,9 @@
           <h1>A Design System</h1>
           <h2 class="fragment">The single source of truth</h2>
           <!-- on how applications should look and behave -->
-          <h3 class="fragment">
-            <span class="comic">Font</span>
-            ,
-            <span class="angular">color</span>
-            ,
-            <span class="med-text">sizing</span>
-            , etc
+          <h3>
+            <span class="comic fragment">Font</span><span class="fragment">, <span class="angular">color</span></span
+            ><span class="fragment">, <span class="med-text">sizing</span></span>
           </h3>
           <h3 class="fragment">Guid to UX and design</h3>
           <h3 class="fragment">Re-usable elements</h3>
@@ -294,21 +320,26 @@
         </section>
         <section>
           <section>
-            <h1>Material Design</h1>
+            <h1 class="flex-center">
+              Material Design
+              <img
+                src="media/logos/material.svg"
+                class="material-icon no-img-outline"
+                style="margin-left: 10px !important;"
+              />
+            </h1>
           </section>
-          <section data-background="media/materialdesign/frontpage.png" style="top: 0px !important;">
-          </section>
+          <section data-background="media/materialdesign/frontpage.png" style="top: 0px !important;"></section>
           <section data-background="media/materialdesign/button demo.png" style="top: 0px !important;"></section>
           <section data-background="media/materialdesign/placement.png" style="top: 0px !important;"></section>
         </section>
-        <section>
+        <!-- <section>
           <h2>A lack of an design system</h2>
           <h3 class="fragment">Each website developed looks differently</h3>
           <h3 class="fragment">Witch side is the button on?</h3>
-          <!-- https://material.io/components/dialogs#usage -->
           <h3 class="fragment">Different colors and sizes</h3>
           <h3 class="fragment">Each new project starts with an handicap</h3>
-        </section>
+        </section> -->
 
         <section>
           <section>
@@ -320,9 +351,9 @@
             <h2 class="fragment">Needed to work everywhere</h2>
           </section>
           <section>
-            <h2>What to make it in?</h2>
+            <h1>What to make it in?</h1>
             <h2 class="fragment"><span class="css">CSS</span> only is a start</h2>
-            <h2 class="fragment">Need logic popups, tables, gallery</h2>
+            <h3 class="fragment">Need logic for popups, tables, gallery</h3>
           </section>
           <section>
             <h2>Needed to be easy to use</h2>
@@ -339,23 +370,32 @@
             <h1 class="fragment">And marketing 🎉</h1>
           </section>
           <section>
+            <h1>⚙️</h1>
+          </section>
+          <section>
             <h2>Landed on a two part system</h2>
           </section>
           <!-- TODO illustration -->
+        </section>
+        <section>
+          <section>
+            <h2>Pure <span class="css">CSS</span> core (+ <span class="html">HTML</span>)</h2>
+            <h2 class="fragment">Component library (<span class="js">JS</span>/<span class="typescript">TS</span>)</h2>
+          </section>
           <section>
             <h2>Pure <span class="css">CSS</span> core (+ <span class="html">HTML</span>)</h2>
             <h2 class="fragment"><span class="css">CSS</span> classes</h2>
-            <h2 class="fragment">Component library (<span class="js">JS</span>/<span class="typescript">TS</span>)</h2>
-            <h2 class="fragment">Advanced components</h2>
+            <h2 class="fragment">Like buttons, cards and badges</h2>
           </section>
-        </section>
 
-        <section>
-          <h1>Component library</h1>
-          <h2 class="fragment">Ready to use components</h2>
-          <!-- change excample. move to css core part?  -->
-          <h3 class="fragment">Like buttons, cards and dialogs</h3>
-          <h3 class="fragment">From a simple divider to a complex table</h3>
+          <section>
+            <h1>Component library</h1>
+            <h2 class="fragment">Can't just use <span class="css">CSS</span></h2>
+            <h2 class="fragment">Ready to use components</h2>
+            <h2 class="fragment">Like tables, popups and select</h2>
+            <h2 class="fragment">Styled from <span class="css">CSS</span> core</h2>
+            <!-- <h3 class="fragment">From a simple divider to a complex table</h3> -->
+          </section>
         </section>
         <section>
           <section>
@@ -418,7 +458,7 @@
             <pre class=""><code class="BASH" data-trim contenteditable>
               ng add @company/component-library
             </code></pre>
-            <h2 class="fragment">Auto install, and setup</h2>
+            <h2 class="fragment">Auto install, and setup 🚀</h2>
             <pre class="fragment"><code class="BASH" data-trim contenteditable>
               ng update @company/component-library
             </code></pre>
@@ -437,10 +477,11 @@
         <section>
           <!-- todo fix where did we put it -->
           <h2>What goes in the component library?</h2>
-          <h3 class="fragment">
-            Only components that require <span class="js">JS</span>/<span class="typescript">TS</span>
-          </h3>
+          <h2>What goes in the <span class="css">CSS</span> Core?</h2>
           <h3 class="fragment">First try to put in <span class="css">CSS</span> core</h3>
+          <h3 class="fragment">
+            Component library -> Require Logic
+          </h3>
           <h3 class="fragment">
             Bare minimum <span class="css">CSS</span> in <span class="angular">Angular</span> project
           </h3>
@@ -471,10 +512,15 @@
 
         <section>
           <h1>Documentation</h1>
+          <!-- TODO screenshot! -->
           <h3 class="fragment">Each part self documenting</h3>
           <h3 class="fragment">Best practice in <span class="css">CSS</span> core</h3>
-          <h3 class="fragment">The first you will read</h3>
         </section>
+
+        <section class="black-stroke" data-background="media/hdd.png"></section>
+        <section class="black-stroke" data-background="media/hdd-doc.png"></section>
+        <section class="black-stroke" data-background="media/hal.png"></section>
+        <section class="black-stroke" data-background="media/hal-doc.png"></section>
 
         <section>
           <section>
@@ -538,8 +584,8 @@
           </section>
         </section>
         <section>
-          <section>
-            <h1>tips n tricks</h1>
+          <section class="black-stroke" data-background="media/stock/tips.jpg">
+            <h1>Tips n tricks</h1>
           </section>
           <section>
             <h1>Don't support IE</h1>
@@ -567,14 +613,14 @@
             </code></pre>
             <h3 class="fragment">No need to import <span class="scss">SCSS</span> file</h3>
             <h3 class="fragment">Dynamic switch to <span class="dark-theme">dark</span> theme</h3>
-            <h3 class="fragment">Change colors in on the fly</h3>
+            <h3 class="fragment">Change <span class="color-animation">colors</span> on on the fly</h3>
             <!-- <h3 class="fragment">Can use in calc()</h3> -->
           </section>
           <section>
-            <h2>Conventional changelog</h2>
-            <h3 class="fragment">feat(popup): Added close button</h3>
-            <h3 class="fragment">bug(button): Fixed hover effect</h3>
-            <h3 class="fragment">refactor(table): Improved speed</h3>
+            <h2>Conventional <span class="git">changelog</span></h2>
+            <h3 class="fragment">feat(popup): <span class="no-bold">Added close button</span></h3>
+            <h3 class="fragment">bug(button): <span class="no-bold">Fixed hover effect</span></h3>
+            <h3 class="fragment">refactor(table): <span class="no-bold">Improved speed</span></h3>
           </section>
           <section class="smallerH1">
             <!-- <h2>Other tips n tricks</h2> -->
@@ -595,29 +641,33 @@
           </section> -->
         </section>
         <section>
-          <section>
-            <h2>What to keep in mind 💭</h2>
+          <section class="smallerH1">
+            <h1>What to keep in mind 💭</h1>
           </section>
           <section>
             <h2>Design system on native mobile</h2>
             <h2 class="fragment">
               Can't use <span class="css">CSS</span>, <span class="js">JS</span> or <span class="html">HTML</span>
             </h2>
-            <h3 class="fragment flex-center">
+            <h2 class="fragment flex-center">
               Consider design tokens
               <img src="media/chip.png" class="icon no-img-outline" style="margin-left: 10px !important;" />
-            </h3>
-            <h3 class="fragment">A more abstract design system</h3>
+            </h2>
+            <h2 class="fragment">A more abstract design system</h2>
           </section>
           <section>
-            <h1>Don't use <span class="angular">Angular</span> if everyone knows <span class="vue">Vue</span></h1>
+            <h1>Don't use <span class="angular">Angular</span></h1>
+            <h1 class="fragment">if everyone knows <span class="vue">Vue</span></h1>
           </section>
           <section>
-            <h2>Consider making directly as <span class="web-components">web&nbsp;components</span></h2>
+            <h2>Consider making directly as</h2>
+            <h1 class="fragment"><span class="web-components">web&nbsp;components</span></h1>
+            <h2 class="fragment">material-components-web-components</h2>
           </section>
+          <section data-background="media/mat web comp.png"></section>
           <section>
-            <h3>Creating a design system is not easy</h3>
-            <h2 class="fragment">But worth it</h2>
+            <h2>Creating a design system is not easy</h2>
+            <h1 class="fragment">But worth it</h1>
           </section>
         </section>
         <!-- <section ></section> -->
@@ -625,7 +675,6 @@
           <h1 class="fragment">Thanks for listening!</h1>
           <h2 class="fragment">Jan Greger Hemb</h2>
           <h1 class="fragment"><span class="bcc">Curious</span> Programming</h1>
-          <h2 class="fragment">Subscribe for <span class="bcc">videos</span> 📺</h2>
         </section>
       </div>
     </div>
@@ -653,6 +702,13 @@
         if (event.fragment.classList.value.includes("addFadeinBelow")) {
           Array.from(event.fragment.children).forEach((current) => {
             current.classList.add("fade-in");
+          });
+        }
+      });
+      Reveal.addEventListener("fragmenthidden", function (event) {
+        if (event.fragment.classList.value.includes("addFadeinBelow")) {
+          Array.from(event.fragment.children).forEach((current) => {
+            current.classList.remove("fade-in");
           });
         }
       });

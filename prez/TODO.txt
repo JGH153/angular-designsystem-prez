@@ -1,0 +1,15 @@
+brå overgang fra history til deswignsystem
+
+fix view encapsulation
+
+fix code in ngProject as
+
+how to do demo?
+
+"Had several websites already" need stock photo
+
+"Can't just use CSS" need to say logic JS TS somewhere
+
+"What goes in the component librar" missing fragment
+
+"Input as HTML" slit intwo
