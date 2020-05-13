@@ -51,6 +51,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .flexrox-no-marg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .browser-img {
@@ -135,6 +142,19 @@
         }
       }
 
+      .rotation-animation {
+        animation: rotAnimation 2s linear infinite;
+      }
+
+      @keyframes rotAnimation {
+        0% {
+          transform:rotate(0deg);
+        }
+        100% {
+          transform:rotate(360deg);
+        }
+      }
+
       .color-animation {
         animation: colorLoop 0.7s infinite;
         animation-direction: alternate;
@@ -163,7 +183,7 @@
       .black-stroke h1,
       .black-stroke h2,
       .black-stroke h3 {
-        text-shadow: 0px 0px 30px rgba(0, 0, 0, 1) !important;
+        /* text-shadow: 0px 0px 30px rgba(0, 0, 0, 1) !important; */
       }
 
       .black-stroke-thin {
@@ -234,6 +254,8 @@
         <section>
           <section class="black-stroke" data-background="media/stock/adventureStart.jpeg">
             <h1>Story time 📚</h1>
+            <h1 class="opacity-hidden">1</h1>
+            <h1 class="opacity-hidden">1</h1>
           </section>
           <section class="black-stroke" data-background="media/stock/creativ.jpg">
             <h2>Medium sized company</h2>
@@ -314,7 +336,7 @@
         </section>
         <section class="" data-background="media/stock/looking.jpg">
           <blockquote class="big-blockquote backdrop-default">
-            Design systems are the solution to the problem of how to enable rapid development and innovation while
+            Design systems are the solution to the problem of how to enable rapid development and innovation, while
             maintaining a consistent user experience, and design.
           </blockquote>
         </section>
@@ -342,16 +364,19 @@
         </section> -->
 
         <section>
-          <section>
-            <h1>Story continue 📖</h1>
+          <section class="black-stroke" data-background="media/stock/storycont.jpg">
+            <!-- The? -->
+            <h1>Story continues 📖</h1>
           </section>
-          <section>
+
+          <!-- TODO new image less pronouced -->
+          <section class="black-stroke" data-background="media/stock/rail.jpg">
             <h2>Had several websites already</h2>
             <h2 class="fragment">In different frameworks</h2>
             <h2 class="fragment">Needed to work everywhere</h2>
           </section>
           <section>
-            <h1>What to make it in?</h1>
+            <h1>How to create it?</h1>
             <h2 class="fragment"><span class="css">CSS</span> only is a start</h2>
             <h3 class="fragment">Need logic for popups, tables, gallery</h3>
           </section>
@@ -370,7 +395,9 @@
             <h1 class="fragment">And marketing 🎉</h1>
           </section>
           <section>
-            <h1>⚙️</h1>
+            <h1>
+              ⚙️
+            </h1>
           </section>
           <section>
             <h2>Landed on a two part system</h2>
@@ -379,18 +406,19 @@
         </section>
         <section>
           <section>
-            <h2>Pure <span class="css">CSS</span> core (+ <span class="html">HTML</span>)</h2>
+            <h2>Pure <span class="css">CSS</span>/<span class="scss">SCSS</span> core (+ <span class="html">HTML</span>)</h2>
             <h2 class="fragment">Component library (<span class="js">JS</span>/<span class="typescript">TS</span>)</h2>
           </section>
           <section>
             <h2>Pure <span class="css">CSS</span> core (+ <span class="html">HTML</span>)</h2>
             <h2 class="fragment"><span class="css">CSS</span> classes</h2>
             <h2 class="fragment">Like buttons, cards and badges</h2>
+            <h2 class="fragment">Sometimes need logic (<span class="js">JS</span>/<span class="typescript">TS</span>)</h2>
           </section>
 
           <section>
             <h1>Component library</h1>
-            <h2 class="fragment">Can't just use <span class="css">CSS</span></h2>
+            <!-- <h2 class="fragment">Can't just use <span class="css">CSS</span></h2> -->
             <h2 class="fragment">Ready to use components</h2>
             <h2 class="fragment">Like tables, popups and select</h2>
             <h2 class="fragment">Styled from <span class="css">CSS</span> core</h2>
@@ -408,7 +436,7 @@
             <h3 class="fragment">The limitations of <span class="css">CSS</span> is good</h3>
           </section>
           <section>
-            <h2>Needed a framework</h2>
+            <h1>Needed a framework</h1>
             <h2 class="fragment">Pure <span class="web-components">web components</span> are too basic</h2>
             <h1 class="fragment angular">Angular</h1>
           </section>
@@ -466,7 +494,7 @@
             <pre class="fragment"><code class="BASH" data-trim contenteditable>
               ng generate library my-component-library
             </code></pre>
-            <h2 class="fragment">Auto setup new library</h2>
+            <h2 class="fragment">Auto setup of new library</h2>
           </section>
           <section>
             <h2>Build on top of <span class="angular">Angular material</span></h2>
@@ -477,10 +505,9 @@
         <section>
           <!-- todo fix where did we put it -->
           <h2>What goes in the component library?</h2>
-          <h2>What goes in the <span class="css">CSS</span> Core?</h2>
           <h3 class="fragment">First try to put in <span class="css">CSS</span> core</h3>
-          <h3 class="fragment">
-            Component library -> Require Logic
+          <h3 class="fragment flexrox-no-marg">
+            Require Logic ➡️ <span class="fragment">Component library</span>
           </h3>
           <h3 class="fragment">
             Bare minimum <span class="css">CSS</span> in <span class="angular">Angular</span> project
@@ -527,7 +554,7 @@
             <h1><span class="angular">Angular</span> tips n tricks</h1>
           </section>
           <section>
-            <h2>ChangeDetectionStrategy.OnPush</h2>
+            <h2><span class="angular">ChangeDetectionStrategy</span>.OnPush</h2>
             <h3 class="fragment">Takes control over change detection</h3>
             <h3 class="fragment">Reduce re-renders</h3>
           </section>
@@ -535,20 +562,20 @@
             <h2>Input as <span class="html">HTML</span></h2>
             <pre class="fragment"><code class="HTML" data-trim contenteditable>
               <my-component content="Hello"></my-component> 
-
-              <!-- VS -->
-
+            </code></pre>
+            <pre class="fragment"><code class="HTML" data-trim contenteditable>
               <my-component>
                 <p>Hello</p>
               </my-component>
             </code></pre>
           </section>
           <section>
+            <!-- TODO fix code example -->
             <h1 class="">ngProjectAs + select</h1>
             <pre class="fragment"><code class="HTML" data-trim contenteditable>
               <my-component>
-                <ng-container ngProjectAs="pageTitle">My Page Title</ng-container>
-                <ng-container ngProjectAs="pageContent">My Page Title</ng-container>
+                <ng-container ngProjectAs="pageTitle">Page Title</ng-container>
+                <ng-container ngProjectAs="pageContent">Page Content</ng-container>
               </my-component>
             </code></pre>
             <pre class="fragment"><code class="HTML" data-trim contenteditable>
@@ -561,26 +588,25 @@
             </code></pre>
           </section>
           <section>
-            <!-- break up example TODO! -->
-            <h2>viewEncapsulation</h2>
-            <h2 class="fragment">On VS Off</h2>
+            <h1 class="angular">viewEncapsulation</h1>
+            <h2 class="fragment">Consider ShadowDom</h2>
             <pre class="fragment"><code class="CSS" data-trim contenteditable>
-              /* CSS file */
+              /* Allow for margin and padding */
               :host {
                 display: block;
-              }
+              }       
+            </code></pre>
+
+            <!-- <pre class="fragment"><code class="HTML" data-trim contenteditable>
               :host(.big) .card {
                 width: 700px;
               }
               .card {
                 width: 200px;
               }
-            </code></pre>
-
-            <pre class="fragment"><code class="HTML" data-trim contenteditable>
               <app-card class="big" style="margin: 10px"></app-card>
             </code></pre>
-            <h2 class="fragment">ShadowDom</h2>
+            <h2 class="fragment">ShadowDom</h2> -->
           </section>
         </section>
         <section>
@@ -613,7 +639,7 @@
             </code></pre>
             <h3 class="fragment">No need to import <span class="scss">SCSS</span> file</h3>
             <h3 class="fragment">Dynamic switch to <span class="dark-theme">dark</span> theme</h3>
-            <h3 class="fragment">Change <span class="color-animation">colors</span> on on the fly</h3>
+            <h3 class="fragment">Change <span class="color-animation">colors</span> on the fly</h3>
             <!-- <h3 class="fragment">Can use in calc()</h3> -->
           </section>
           <section>
@@ -632,16 +658,16 @@
                 <span class="typescript">StrictNullChecks</span>
               </span>
             </h1> -->
-            <h1 class="fragment">Use <span class="kanban">Kanban</span></h1>
-            <h1 class="fragment">Use <span class="prettier">Prettier</span></h1>
-            <h1 class="fragment">Embrace <span class="open-source">Open source</span></h1>
+            <h1 class="fragment">Adopt <span class="kanban">Kanban</span></h1>
+            <h1 class="fragment">Apply <span class="prettier">Prettier</span></h1>
+            <h1 class="fragment">Go <span class="open-source">Open source</span></h1>
           </section>
           <!-- <section>
             <h2>Open source</h2>
           </section> -->
         </section>
         <section>
-          <section class="smallerH1">
+          <section class="smallerH1 black-stroke" data-background="media/stock/thinking2.jpg">
             <h1>What to keep in mind 💭</h1>
           </section>
           <section>
