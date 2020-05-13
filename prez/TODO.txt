@@ -1,8 +1,8 @@
 
 fix code in ngProject as
 
-how to do demo?
-
-"Had several websites already" need stock photo
-
 "Medium sized company" need less prodounced img
+
+use more time on examples
+
+unclear for non devs waht should make them angry
