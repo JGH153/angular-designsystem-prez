@@ -23,10 +23,12 @@
       document.getElementsByTagName("head")[0].appendChild(link);
     </script>
     <style>
-      .slides {
-        width: 82% !important;
+      /* only for prez, not for speaker view */
+      @media screen and (min-width: 1500px) {
+        .slides {
+          width: 82% !important;
+        }
       }
-
       .med-text {
         font-size: 60px;
       }
@@ -278,6 +280,7 @@
           <section class="black-stroke" data-background="media/stock/power.jpg">
             <h2>Medium sized company</h2>
             <h1 class="fragment elvia">Elvia</h1>
+            <!-- Power transmitter el power distributor  -->
             <h3 class="fragment">Recent push to digital solutions</h3>
           </section>
           <section class="black-stroke" data-background="media/stock/rapidDev.jpg">
@@ -420,6 +423,7 @@
           <section>
             <h2>Landed on a two part system</h2>
           </section>
+
           <!-- TODO illustration -->
         </section>
         <section>
@@ -429,6 +433,12 @@
             </h2>
             <h2 class="fragment">Component library (<span class="js">JS</span>/<span class="typescript">TS</span>)</h2>
           </section>
+          <section class="" data-background="media/overview-mystery/greger1.png"></section>
+          <section class="" data-background="media/overview-mystery/greger2.png"></section>
+          <section class="" data-background="media/overview-mystery/greger3.png"></section>
+          <section class="" data-background="media/overview-mystery/greger4.png"></section>
+          <section class="" data-background="media/overview-mystery/greger5.png"></section>
+          <section class="" data-background="media/overview-mystery/greger6.png"></section>
           <section>
             <h2>Pure <span class="css">CSS</span> core (+ <span class="html">HTML</span>)</h2>
             <h2 class="fragment"><span class="css">CSS</span> classes</h2>
@@ -523,6 +533,8 @@
             <h2 class="fragment">Table, select, modal</h2>
             <h2 class="fragment">Don't reinvent the wheel</h2>
           </section>
+          <section class="" data-background="media/overview/greger3.png"></section>
+          <section class="" data-background="media/overview/greger6.png"></section>
         </section>
         <section>
           <!-- todo fix where did we put it -->
@@ -609,7 +621,7 @@
           </section>
           <section>
             <h1 class="angular">viewEncapsulation</h1>
-            <h2 class="fragment">Consider ShadowDom</h2>
+            <h2 class="fragment">Consider <span class="css">ShadowDom</span></h2>
             <pre class="fragment"><code class="CSS" data-trim contenteditable>
               /* Allow for margin and padding */
               :host {
@@ -634,7 +646,7 @@
             <h1>Tips n tricks</h1>
           </section>
           <section>
-            <h1>Don't support IE</h1>
+            <h1>Don't support <span class="ie">IE</span></h1>
             <div class="flexrox">
               <img src="media/browsers/chrome.svg" class="browser-img fragment" />
               <img src="media/browsers/ff.svg" class="browser-img fragment" />
@@ -709,6 +721,10 @@
           <section>
             <h2>Consider making directly as</h2>
             <h1 class="fragment"><span class="web-components">web&nbsp;components</span></h1>
+            <h2 class="fragment">
+              <span class="angular">Angular material,</span> <span class="vue fragment">Vuetify,</span>
+              <span class="react fragment">Material UI</span>
+            </h2>
             <h2 class="fragment">material-components-web-components</h2>
           </section>
           <section data-background="media/mat web comp.png"></section>

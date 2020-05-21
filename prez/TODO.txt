@@ -6,3 +6,5 @@ fix code in ngProject as
 use more time on examples
 
 unclear for non devs waht should make them angry
+
+mer personlig touch. etter story. 
