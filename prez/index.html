@@ -554,7 +554,7 @@
           <!--  fix all is comp lib -->
           <h1>Testing</h1>
           <h3 class="fragment"><span class="css">CSS</span> testing is hard</h3>
-          <h3 class="fragment"><span class="backstop">BackstopJS</span>, visual regression testing</h3>
+          <h3 class="fragment">visual regression testing (<span class="backstop">BackstopJS</span>)</h3>
           <h3 class="fragment">Test everything in component library</h3>
           <h3 class="fragment">Unit and E2E (Cypress)</h3>
         </section>
@@ -588,7 +588,7 @@
 
         <section>
           <section>
-            <h1><span class="angular">Angular</span> tips n tricks</h1>
+            <h1><span class="angular">Angular</span> tips 'n tricks</h1>
           </section>
           <section>
             <h2><span class="angular">ChangeDetectionStrategy</span>.OnPush</h2>
@@ -619,10 +619,12 @@
             <pre class="fragment"><code class="HTML" data-trim contenteditable>
               
             // inside  my-component
-            <ng-content select="pageTitle"></ng-content>
-            <p>
+            <header>
+              <ng-content select="pageTitle"></ng-content>
+            </header>
+            <main>
               <ng-content select="pageContent"></ng-content>
-            </p>
+            </main>
             </code></pre>
           </section>
           <section>
@@ -633,6 +635,9 @@
               :host {
                 display: block;
               }       
+            </code></pre>
+            <pre class="fragment"><code class="BASH" data-trim contenteditable>
+              ng g c test --displayBlock=true
             </code></pre>
 
             <!-- <pre class="fragment"><code class="HTML" data-trim contenteditable>
@@ -649,7 +654,7 @@
         </section>
         <section>
           <section class="black-stroke" data-background="media/stock/tips.jpg">
-            <h1>Tips n tricks</h1>
+            <h1>Tips 'n tricks</h1>
           </section>
           <section>
             <h1>Don't support <span class="ie">IE</span></h1>
@@ -734,6 +739,17 @@
             <h2 class="fragment">material-components-web-components</h2>
           </section>
           <section data-background="media/mat web comp.png"></section>
+          <section>
+            <h1>Consider just using</h1>
+            <h1 class="flex-center">
+              Material Design
+              <img
+                src="media/logos/material.svg"
+                class="material-icon no-img-outline"
+                style="margin-left: 10px !important;"
+              />
+            </h1>
+          </section>
           <section>
             <h2>Creating a design system is not easy</h2>
             <h1 class="fragment">But worth it</h1>
